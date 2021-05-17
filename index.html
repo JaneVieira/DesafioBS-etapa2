@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Brasil System</title>
+    <script src="https://kit.fontawesome.com/3f6f971d8e.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body onload="carregaFiltros()">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 fs-3">
+                Sistema para Solicitação de Livros - SiSoLi
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col fs-2">
+                Solicitações de Livros
+            </div>
+            <div class="col">
+                <div class="btn btn-dark float-end ">
+                    59:59
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                
+                    <label>Selecione o Vinculo</label>
+                    <select class="form-select" id="vinculo" placeholder="Selecione um Vinculo">
+                        <option value="">Selecione um Vinculo</option>
+                        <option value="Aluno">Aluno</option>
+                        <option value="Discente">Discente</option>
+                        <option value="Técnico">Técnico</option>
+                    </select>
+                </div>
+                
+                
+                
+                <div class="col">
+                    <label>Titulo</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo do livro">
+                </div>
+                
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label>Autor</label>
+                        <input type="text" class="form-control" id="autor" placeholder="Digite o autor do livro">
+                    </div>
+                    <div class="col">
+                        <label>Edição</label>
+                        <input type="text" class="form-control" id="edicao" placeholder="Digite a edição do livro">
+                
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label>ISSN</label>
+                        <input type="text" class="form-control" id="issn" placeholder="Digite o issn do livro">
+                    </div>
+                
+                    <div class="col">
+                        <label>Ano</label>
+                        <input type="text" class="form-control" id="ano" placeholder="Digite o ano do livro">
+                    </div>
+                    <div class="row mt-2 float-star">
+                        <div class="col-6">
+                            <label>Editora</label>
+                            <input type="text" class="form-control" id="editora" placeholder="Digite a editora do livro">
+                        </div>
+                
+                        <div class="d-grid gap-2 d-md-block mt-3">
+                            <button class="btn btn-purpple" type="button" onclick="solicitar()" >Solicitar Livro</button>
+                
+                        </div>
+                    </div>
+
+                <div class="content mt-3 ">
+                    <!-- classe conteudo-->
+
+                    <i class="fas fa-3x fa-book"></i>
+                    <span class="navbar-brand mb-0 fs-3">
+                        Tabela de Solicitação
+                    </span>
+
+                    <table table class="table table-striped">
+                        <!-- tabela/ o border faz uma borda na tabela-->
+                        <thead>
+                            
+                            <!-- cabecalho-->
+                            <th class="center"> Vinculo</th>
+                            <th class="center"> Titulo</th>
+                            <th class="center">Autor</th>
+                            <th class="center">Edição</th>
+                            <th class="center">ISSN</th>
+                            <th class="center">Ano</th>
+                            <th class="center">Editora</th>
+
+                        </thead>
+                        <tbody id="tbody" class="center"> 
+                            <!--onde vai ficar todo o contudo da tabela-->
+                        </tbody>
+                    </table>
+                </div>
+                
+            </body>
+
+</html>

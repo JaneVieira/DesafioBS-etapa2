@@ -1,0 +1,14 @@
+.btn-purpple  {
+    background-color: #6F43C2;
+    color: white;
+}
+
+.btn-purpple:hover {
+    color: white;
+    background-color: #5b36a1;
+
+}
+
+.center {
+    text-align: center;
+}
